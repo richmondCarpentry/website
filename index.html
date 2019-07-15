@@ -3,8 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>Richmond Carpentry Dev</title>
+    <link rel="stylesheet" href="css/master.css">
   </head>
-  <body>
-    <p>Hello</p>
+  <body onload="setHeight()">
+    <header>
+      <div class="header-img-holder">
+        <img src="" alt="header-img">
+      </div>
+      <div class="spacer" id="above-menu"></div>
+      <div class="solid-line" id="menu-top"></div>
+      <div id="menu-one"></div>
+      <div class="menu-items-holder">
+        <div class="menu-item">
+          <a href="#" id="active">HOME</a>
+        </div>
+        <div class="solid-line menu-divider"></div>
+        <div class="menu-item">
+          <a href="#">OUR SERVICES</a>
+        </div>
+        <div class="solid-line menu-divider"></div>
+        <div class="menu-item">
+          <a href="#">CASE STUDIES</a>
+        </div>
+        <div class="solid-line menu-divider"></div>
+        <div class="menu-item">
+          <a href="#" id="right-most">CONTACT US</a>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div id="menu-two"></div>
+      <div class="solid-line" id="menu-bottom"></div>
+    </header>
+    <div class="outer-holder">
+
+
+    </div>
+
+    <script type="text/javascript">
+      function setHeight() {
+        var verticalSeps = document.getElementsByClassName('menu-divider');
+        for (var i = 0; i < verticalSeps.length; i++) {
+          verticalSeps[i].style.height = document.getElementsByClassName('menu-item')[0].clientHeight + "px";
+        }
+      }
+    </script>
   </body>
 </html>
