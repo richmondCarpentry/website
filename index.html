@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>Richmond Carpentry Dev</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" type="image/png" href="res/site/richmond site id.png">
   </head>
-  <body onload="setHeight()">
+  <body onload="load()">
     <header>
       <div class="header-img-holder">
-        <img src="" alt="header-img">
+        <img src="res/home/header.png" alt="header-img">
       </div>
       <div class="spacer" id="above-menu"></div>
       <div class="solid-line" id="menu-top"></div>
@@ -34,10 +36,18 @@
       <div id="menu-two"></div>
       <div class="solid-line" id="menu-bottom"></div>
     </header>
-    <div class="outer-holder">
-
-
-    </div>
+    <div class="clear"></div>
+    <main>
+      <section id="slider-banner">
+        <div class="banner-container">
+          <img src="res/home/banners-01.png" alt="banner-1.jpg">
+          <img src="res/home/banners_Artboard 2.png" alt="banner-2.jpg">
+          <img src="res/home/banners_Artboard 3.png" alt="banner-3.jpg">
+        </div>
+      </section>
+      <section id="section2">
+      </section>
+    </main>
 
     <script type="text/javascript">
       function setHeight() {
@@ -46,6 +56,33 @@
           verticalSeps[i].style.height = document.getElementsByClassName('menu-item')[0].clientHeight + "px";
         }
       }
+
+      function load() {
+        setHeight();
+        setMenu();
+      }
+
+      function setMenu() {
+        var items = document.getElementsByClassName('menu-item');
+        var holder = document.getElementsByClassName('menu-items-holder')[0];
+        var width = 0;
+        for (var i = 0; i < items.length; i++) {
+          width += items[i].clientWidth;
+        }
+        holder.style.width = width + 3 + "px";
+        holder.style.margin = "auto";
+      }
+
+      window.addEventListener("DOMContentLoaded", function(e) {
+
+        var container = document.getElementsByClassName("banner-container")[0];
+        var fadeComplete = function(e) { container.appendChild(arr[0]); };
+        var arr = container.getElementsByTagName("img");
+        for(var i=0; i < arr.length; i++) {
+          arr[i].addEventListener("animationend", fadeComplete, false);
+        }
+
+      }, false);
     </script>
   </body>
 </html>

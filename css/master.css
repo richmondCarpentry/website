@@ -12,14 +12,16 @@
   clear: both;
 }
 
-.header-image-holder {
-  width: 30%;
+.header-img-holder {
+  width: 45%;
   margin: auto;
+  padding-top: 10px;
 }
 
-.header-image-holder img {
+.header-img-holder img {
   width: 100%;
   height: auto;
+  text-align: center;
 }
 
 #above-menu {
@@ -32,23 +34,23 @@
 }
 
 #menu-one {
-  height: 5px;
+  height: 20px;
 }
 
 .menu-items-holder {
-  width: 50%;
   margin: auto;
 }
 
 .menu-item {
-  width: 24%;
   float: left;
   text-align: center;
+  padding: 0px 5px;
 }
 
 .menu-item a {
   text-decoration: none;
   color: black;
+  margin: 10px 20px;
 }
 
 .menu-divider {
@@ -63,7 +65,7 @@
 }
 
 #menu-two {
-  height: 7px;
+  height: 15px;
 }
 
 #menu-bottom {
