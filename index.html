@@ -1,88 +1,176 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Richmond Carpentry Dev</title>
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="shortcut icon" type="image/png" href="res/site/richmond site id.png">
-  </head>
-  <body onload="load()">
-    <header>
-      <div class="header-img-holder">
-        <img src="res/home/header.png" alt="header-img">
+
+<head>
+  <meta charset="utf-8">
+  <title>Richmond Carpentry Dev</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="shortcut icon" type="image/png" href="res/site/richmond site id.png">
+</head>
+
+<body onload="load()">
+  <header>
+    <div class="header-img-holder">
+      <img src="res/home/header.png" alt="header-img">
+    </div>
+    <div class="spacer" id="above-menu"></div>
+    <div class="solid-line" id="menu-top"></div>
+    <div id="menu-one"></div>
+    <div class="menu-items-holder">
+      <div class="menu-item">
+        <a href="#" id="active">HOME</a>
       </div>
-      <div class="spacer" id="above-menu"></div>
-      <div class="solid-line" id="menu-top"></div>
-      <div id="menu-one"></div>
-      <div class="menu-items-holder">
-        <div class="menu-item">
-          <a href="#" id="active">HOME</a>
+      <div class="solid-line menu-divider"></div>
+      <div class="menu-item">
+        <a href="#">OUR SERVICES</a>
+      </div>
+      <div class="solid-line menu-divider"></div>
+      <div class="menu-item">
+        <a href="#">CASE STUDIES</a>
+      </div>
+      <div class="solid-line menu-divider"></div>
+      <div class="menu-item">
+        <a href="#" id="right-most">CONTACT US</a>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div id="menu-two"></div>
+    <div class="solid-line" id="menu-bottom"></div>
+  </header>
+  <div class="clear"></div>
+  <main>
+    <section id="slider-banner">
+      <div class="banner-container">
+        <img src="res/home/banners-01.png" alt="banner-1.jpg">
+        <img src="res/home/banners_Artboard 2.png" alt="banner-2.jpg">
+        <img src="res/home/banners_Artboard 3.png" alt="banner-3.jpg">
+      </div>
+    </section>
+    <section id="section2">
+      <div class="sec2col">
+        <div id="left-col">
+          <h1>About</h1>
+          <p>Richmond Carpentry is a friendly, reliable carpentry services company with over 25 years experience of household woodwork, storage, flooring and kitchen fitting plus a range of commercial carpentry . This gives us planning skills for the big job and an eye for detail and quality customer service.</p>
+          <p>Based in Portishead, North Somerset we provide carpentry solutions for customers across the whole of North Somerset and beyond.</p>
         </div>
-        <div class="solid-line menu-divider"></div>
-        <div class="menu-item">
-          <a href="#">OUR SERVICES</a>
+        <div id="right-col">
+          <iframe id="maps" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaawPXyT95MFrdRvL3uZFuIP8fpoTJ9rU&q=Portishead,UK"></iframe>
         </div>
-        <div class="solid-line menu-divider"></div>
-        <div class="menu-item">
-          <a href="#">CASE STUDIES</a>
+      </div>
+      <div class="clear"></div>
+    </section>
+    <section class="bannerSect">
+      <img src="res/home/middle banner-01.png" alt="home_banner_1">
+    </section>
+    <section id="sect-3">
+      <div class="sect3cols">
+        <div id="left-col">
+          <div class="fader-container">
+            <img src="res/home/homepage slider/IMG_0142.JPG" alt="homePageBannerImg1">
+            <img src="res/home/homepage slider/IMG_0150.JPG" alt="homePageBannerImg2">
+            <img src="res/home/homepage slider/IMG_0286.JPG" alt="homePageBannerImg3">
+            <img src="res/home/homepage slider/IMG_0340.JPG" alt="homePageBannerImg4">
+            <img src="res/home/homepage slider/Resized_20171122_080212.jpg" alt="homePageBannerImg5">
+          </div>
         </div>
-        <div class="solid-line menu-divider"></div>
-        <div class="menu-item">
-          <a href="#" id="right-most">CONTACT US</a>
+        <div id="right-col">
+          <h1>Services</h1>
+          <p>We are always happy to provide free quotes for a range of jobs from small one-off home improvements to larger, ongoing commercial projects.</p>
+          <ul>
+            <li>Kitchen planning and fitting</li>
+            <li>Bespoke furniture</li>
+            <li>Doors and skirting</li>
+            <li>Wardrobes and storage</li>
+            <li>Office Workstations</li>
+            <li>Glass balconies</li>
+          </ul>
+          <p>We can project manage the complete kitchen installation, using the same team of trusted, plasterers, plumbers, and electricians.</p>
+          <p>To view images and see more about some of our recent work, go to our <a href="#">Case Studies</a> page.</p>
+          <p>Get in touch with us by filling out the <a href="#">contact form</a>, or <a href="tel:+447722959708">call</a> Andy directly.</p>
+        </div>
+      </div>
+    </section>
+    <section class="bannerSect">
+      <img src="res/home/middle banner-02.png" alt="homeBanner2">
+    </section>
+  </main>
+
+  <footer>
+    <div class="footerBorder"></div>
+    <div class="footerContainer">
+      <div class="footerCol">
+        <div id="left">
+          <h1>Contact</h1>
+          <p>Call Andy on <a href="tel:+447722 959708">07722 959708</a>.</p>
+          <p>Email: <a href="mailto:rcsportishead@gmail.com">rcsportishead@gmail.com</a>.</p>
+          <p>Fill out <a href="#">our form</a> to leave a message.</p>
+        </div>
+        <div id="middle">
+          <div class="imgHolder">
+            <img src="res/site/city-and-guilds-logo.png" alt="City&Guilds certified">
+          </div>
+        </div>
+        <div id="right">
+          <h1>About</h1>
+          <p>We are based in Portishead and work with customers throughout the South West.</p>
         </div>
         <div class="clear"></div>
       </div>
-      <div id="menu-two"></div>
-      <div class="solid-line" id="menu-bottom"></div>
-    </header>
-    <div class="clear"></div>
-    <main>
-      <section id="slider-banner">
-        <div class="banner-container">
-          <img src="res/home/banners-01.png" alt="banner-1.jpg">
-          <img src="res/home/banners_Artboard 2.png" alt="banner-2.jpg">
-          <img src="res/home/banners_Artboard 3.png" alt="banner-3.jpg">
-        </div>
-      </section>
-      <section id="section2">
-      </section>
-    </main>
+    </div>
 
-    <script type="text/javascript">
-      function setHeight() {
-        var verticalSeps = document.getElementsByClassName('menu-divider');
-        for (var i = 0; i < verticalSeps.length; i++) {
-          verticalSeps[i].style.height = document.getElementsByClassName('menu-item')[0].clientHeight + "px";
-        }
+  </footer>
+
+  <script type="text/javascript">
+    function setHeight() {
+      var verticalSeps = document.getElementsByClassName('menu-divider');
+      for (var i = 0; i < verticalSeps.length; i++) {
+        verticalSeps[i].style.height = document.getElementsByClassName('menu-item')[0].clientHeight + "px";
+      }
+    }
+
+    function load() {
+      setHeight();
+      setMenu();
+    }
+
+    function setMenu() {
+      var items = document.getElementsByClassName('menu-item');
+      var holder = document.getElementsByClassName('menu-items-holder')[0];
+      var width = 0;
+      for (var i = 0; i < items.length; i++) {
+        width += items[i].clientWidth;
+      }
+      holder.style.width = width + 3 + "px";
+      holder.style.margin = "auto";
+    }
+
+    window.addEventListener("DOMContentLoaded", function(e) {
+
+      var container = document.getElementsByClassName("banner-container")[0];
+      var fadeComplete = function(e) {
+        container.appendChild(arr[0]);
+      };
+      var arr = container.getElementsByTagName("img");
+      for (var i = 0; i < arr.length; i++) {
+        arr[i].addEventListener("animationend", fadeComplete, false);
       }
 
-      function load() {
-        setHeight();
-        setMenu();
+    }, false);
+
+    window.addEventListener("DOMContentLoaded", function(e) {
+
+      var container = document.getElementsByClassName("fader-container")[0];
+      var fadeComplete = function(e) {
+        container.appendChild(arr[0]);
+      };
+      var arr = container.getElementsByTagName("img");
+      for (var i = 0; i < arr.length; i++) {
+        arr[i].addEventListener("animationend", fadeComplete, false);
       }
 
-      function setMenu() {
-        var items = document.getElementsByClassName('menu-item');
-        var holder = document.getElementsByClassName('menu-items-holder')[0];
-        var width = 0;
-        for (var i = 0; i < items.length; i++) {
-          width += items[i].clientWidth;
-        }
-        holder.style.width = width + 3 + "px";
-        holder.style.margin = "auto";
-      }
+    }, false);
+  </script>
+</body>
 
-      window.addEventListener("DOMContentLoaded", function(e) {
-
-        var container = document.getElementsByClassName("banner-container")[0];
-        var fadeComplete = function(e) { container.appendChild(arr[0]); };
-        var arr = container.getElementsByTagName("img");
-        for(var i=0; i < arr.length; i++) {
-          arr[i].addEventListener("animationend", fadeComplete, false);
-        }
-
-      }, false);
-    </script>
-  </body>
 </html>

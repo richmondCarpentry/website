@@ -8,6 +8,15 @@
   background-color: #fbf7ed;
 }
 
+*::selection {
+  background-color: #d5a43b;
+}
+
+* a {
+  text-decoration: underline;
+  color: black;
+}
+
 .clear {
   clear: both;
 }
@@ -71,4 +80,38 @@
 #menu-bottom {
   height: 1px;
   background-color: #d5a43b;
+}
+
+footer, footer * {
+  background-color: #f8f0dc;
+}
+
+footer .footerBorder {
+  height: 1px;
+  width: 100%;
+  background-color: #d5a43b;
+}
+
+footer .footerCol {
+  width: 85%;
+  margin: auto;
+}
+
+footer h1 {
+  text-align: center;
+}
+
+footer #left, footer #middle, footer #right {
+  width: 33%;
+  float: left;
+}
+
+footer #middle .imgHolder {
+  width: 50%;
+  margin: auto;
+}
+
+footer #middle .imgHolder img {
+  width: 100%;
+  height: auto;
 }
